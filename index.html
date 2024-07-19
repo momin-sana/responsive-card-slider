@@ -14,129 +14,132 @@
     <title>Responsive card slider </title>
 </head>
 <body>
+   <!-- Bg video -->
    <video autoplay muted loop id="bg-video">
       <source src="./bg.mp4" type="video/mp4">
       Your browser does not support the video tag.
   </video>
+  <!-- Heading -->
    <div id="headingContainer">
       <span id="text1"></span>
       <span id="text2"></span>
   </div>
-  
+  <!-- for graphical elements and filters for heading -->
   <svg id="filters">
       <defs>
           <filter id="threshold">
               <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                             0 1 0 0 0
-                             0 0 1 0 0
-                             0 0 0 255 -140" />
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" 
+               />
           </filter>
       </defs>
   </svg>
 
-    <section class="container">
-        <div class="card__container swiper">
-           <div class="card__content">
-              <div class="swiper-wrapper">
+   <section class="container">
+      <div class="card__container swiper">
+         <div class="card__content">
+            <div class="swiper-wrapper">
 
 
-                 <article class="card__article swiper-slide">
-                    <div class="card__image">
-                       <img src="assets/images/img-1.png" alt="image" class="card__img">
-                       <div class="card__shadow"></div>
-                    </div>
-     
-                    <div class="card__data">
-                       <h3 class="card__name">H-NAME</h3>
-                       <p class="card__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
-                       </p>
-     
-                       <a href="#" class="card__button">View More</a>
-                    </div>
-                 </article>
-     
-                 <article class="card__article swiper-slide">
-                    <div class="card__image">
-                       <img src="assets/images/img-2.png" alt="image" class="card__img">
-                       <div class="card__shadow"></div>
-                    </div>
-     
-                    <div class="card__data">
-                       <h3 class="card__name">F-H-NAME</h3>
-                       <p class="card__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
-                       </p>
-     
-                       <a href="#" class="card__button">View More</a>
-                    </div>
-                 </article>
-     
-                 <article class="card__article swiper-slide">
-                    <div class="card__image">
-                       <img src="assets/images/img-3.png" alt="image" class="card__img">
-                       <div class="card__shadow"></div>
-                    </div>
-     
-                    <div class="card__data">
-                       <h3 class="card__name">M-H-NAME</h3>
-                       <p class="card__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
-                       </p>
-     
-                       <a href="#" class="card__button">View More</a>
-                    </div>
-                 </article>
-     
-                 <article class="card__article swiper-slide">
-                    <div class="card__image">
-                       <img src="assets/images/img-4.png" alt="image" class="card__img">
-                       <div class="card__shadow"></div>
-                    </div>
-     
-                    <div class="card__data">
-                       <h3 class="card__name">F-H-NAM</h3>
-                       <p class="card__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua..
-                       </p>
-     
-                       <a href="#" class="card__button">View More</a>
-                    </div>
-                 </article>
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="assets/images/img-1.png" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">H-NAME</h3>
+                     <p class="card__description">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="assets/images/img-2.png" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">F-H-NAME</h3>
+                     <p class="card__description">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="assets/images/img-3.png" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">M-H-NAME</h3>
+                     <p class="card__description">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="assets/images/img-4.png" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">F-H-NAM</h3>
+                     <p class="card__description">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua..
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
 
-                 <article class="card__article swiper-slide">
-                    <div class="card__image">
-                       <img src="assets/images/img-5.jpg" alt="image" class="card__img">
-                       <div class="card__shadow"></div>
-                    </div>
-     
-                    <div class="card__data">
-                       <h3 class="card__name">M-H-NAM</h3>
-                       <p class="card__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
-                       </p>
-     
-                       <a href="#" class="card__button">View More</a>
-                    </div>
-                 </article>
-              </div>
-           </div>
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="assets/images/img-5.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">M-H-NAM</h3>
+                     <p class="card__description">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmodet dolore aliqua.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+            </div>
+         </div>
 
-           <!-- Navigation buttons -->
-           <div class="swiper-button-next">
-              <i class="ri-arrow-right-s-line"></i>
-           </div>
-           
-           <div class="swiper-button-prev">
-              <i class="ri-arrow-left-s-line"></i>
-           </div>
+         <!-- Navigation buttons -->
+         <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+         </div>
+         
+         <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+         </div>
 
-           <!-- Pagination -->
-           <div class="swiper-pagination"></div>
-        </div>
-     </section>
+         <!-- Pagination -->
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
 
-    <!-- Swiper JS -->
+    <!-- Swiper JS copied online-->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Your custom JS -->
     <script src="assets/js/srcipt.js"></script>

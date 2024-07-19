@@ -29,6 +29,8 @@ let swiperCards = new Swiper(".card__content", {
     },
 });
 
+// Animation effects for heading
+
 const texts = {
     text1: document.getElementById("text1"),
     text2: document.getElementById("text2")
