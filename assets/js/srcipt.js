@@ -1,4 +1,15 @@
 let swiperCards = new Swiper(".card__content", {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
     loop: true,
     spaceBetween: 32,
     grabCursor: true,
@@ -27,6 +38,10 @@ let swiperCards = new Swiper(".card__content", {
             slidesPerView: 3,
         },
     },
+
+    scrollbar: {
+        el: '.swiper-scrollbar',
+      },
 });
 
 // Animation effects for heading
