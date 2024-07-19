@@ -1,0 +1,272 @@
+/* GOOGLE FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+ /* BASE  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1rem;
+    background-color: hsl(212, 42%, 15%);
+    color: hsl(212, 4%, 95%);
+    padding: 0 1rem;
+    margin: 0px;
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(1.5px);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#headingContainer {
+  position: absolute;
+  margin: 2px 0 2px;
+  width: 100vw;
+  height: 20vh;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+  align-items: center;
+  align-content: center;
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: hsl(32, 75%, 50%);
+  text-align: center;
+}
+
+
+/*=============== CARD ===============*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  padding: 2rem 0; 
+  height: 85vh;
+}
+
+.card__container {
+    margin-top: 1px;
+  padding-block: 5rem;
+  position: relative;
+  padding-top: 1px;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__article {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: hsl(212, 42%, 20%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card__article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card__image {
+  position: relative;
+  padding-top: 1.5rem;
+  margin-bottom: -.75rem;
+  overflow: hidden;
+}
+
+.card__image img {
+    transition: transform 0.3s;
+}
+  
+.card__image:hover img {
+    transform: scale(1.1);
+}
+
+.card__data {
+    background-color: hsl(212, 42%, 20%);
+    padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(32, 75%, 50%);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+}
+
+.card__name {
+    font-size: 1.25rem;
+    color: hsl(195, 75%, 52%);
+    margin-bottom: .75rem;
+}
+
+.card__description {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.card__button {
+    display: inline-block;
+    background-color: hsl(38, 92%, 58%);
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color: hsl(212, 40%, 12%);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.card__button:hover {
+    background-color: hsl(32, 91%, 35%);
+    color: hsl(195, 100%, 70%);
+    text-shadow: 0 0 10px hsl(195, 100%, 70%);
+  }
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 3rem;
+  color: hsl(195, 75%, 52%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-prev:hover i,
+.swiper-button-next:hover i {
+  color: hsl(195, 100%, 70%);
+  text-shadow: 0 0 10px hsl(195, 100%, 70%);
+}
+
+.swiper-button-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  left: 1rem;
+}
+
+.swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  right: 1rem;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-size: inherit;
+  color: inherit;
+}
+
+.swiper-pagination-bullet {
+    background-color: hsl(212, 32%, 40%);
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: hsl(38, 92%, 58%);
+  }
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
+}
