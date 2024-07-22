@@ -15,7 +15,7 @@ This project is a responsive card slider with a loading screen, background GIF, 
 
 ## Demo
 
-You can view the live demo of the responsive card slider [here]([https://momin-sana.github.io/responsive-card-slider/]).
+You can view the live demo of the responsive card slider [here](https://momin-sana.github.io/responsive-card-slider/).
 
 ## Features
 
