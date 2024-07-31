@@ -14,7 +14,7 @@ body {
     font-size: 1rem;
     background-color: hsl(212, 42%, 15%);
     color: hsl(212, 4%, 95%);
-    padding: 0 1rem;
+    padding: 0.25rem;
     margin: 0px;
 }
 
@@ -48,14 +48,14 @@ a {
 }
 
 img {
-  display: block;
+  display: flex;
   max-width: 100%;
   height: auto;
 }
 
 #headingContainer {
   position: absolute;
-  margin: 2px 0 2px;
+  margin: 50px 0 50px;
   width: 100vw;
   height: 20vh;
   top: 0;
@@ -72,9 +72,12 @@ img {
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 3px;
   font-size: 40px;
   color: #f09000;
   text-align: center;
+  align-items: center;
+  justify-items: center;
 }
 
 
@@ -83,8 +86,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1px;
-  padding: 2rem 0; 
   height: 85vh;
 }
 
@@ -248,18 +249,18 @@ img {
 }
 
 .swiper-pagination {
-  margin-bottom: 20px; /* Adds space between pagination and scrollbar */
+  margin-bottom: 20px;
 }
 
 .swiper-scrollbar {
-  height: 8px; /* Height of the scrollbar */
-  background: hsl(212, 42%, 20%); /* Background color of the scrollbar track */
+  height: 8px; 
+  background: hsl(212, 42%, 20%);
 }
 
 .swiper-scrollbar-drag {
-  background: #f09000; /* Color of the active draggable part of the scrollbar */
-  height: 4px; /* Reduce the height of the draggable part */
-  width: 5px; /* Reduce the width of the draggable part */
+  background: #f09000;
+  height: 4px; 
+  width: 5px; 
 }
 
 /* Pagination bullet styles */

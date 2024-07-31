@@ -64,7 +64,7 @@ const heading = [
 ];
 
 const morphTimings = 1.5;
-const cooldownTimings = 1.00;
+const cooldownTimings = 3.00;
 
 let textIndex = heading.length - 1;
 let time = new Date();
